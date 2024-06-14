@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'StandingFlowerScriptPersonal-L31Y3';
+    src: url(./font/StandingFlowerScriptPersonal-L31Y3.eot);
+    src: url(./font/StandingFlowerScriptPersonal-L31Y3.eot) format('embedded-opentype'),
+         url(./font/StandingFlowerScriptPersonal-L31Y3.otf) format('otf'),
+         url(./font/StandingFlowerScriptPersonal-L31Y3.ttf) format('truetype'),
+         url(./font/StandingFlowerScriptPersonal-L31Y3.woff) format('woff'),
+         url(./font/StandingFlowerScriptPersonal-L31Y3.woff2) format('woff2');
+
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Unbounded-Black';
+    src: url(./font/Unbounded-Black.eot);
+    src: url(./font/Unbounded-Black.eot) format('embedded-opentype'),
+         url(./font/Unbounded-Black.otf) format('otf'),
+         url(./font/Unbounded-Black.ttf) format('truetype'),
+         url(./font/Unbounded-Black.woff) format('woff'),
+         url(./font/Unbounded-Black.woff2) format('woff2');
+
+    font-weight: 800;
+  }
+
+  @font-face {
+    font-family: 'Unbounded-Bold';
+    src: url(./font/Unbounded-Bold.eot);
+    src: url(./font/Unbounded-Bold.eot) format('embedded-opentype'),
+         url(./font/Unbounded-Bold.otf) format('otf'),
+         url(./font/Unbounded-Bold.ttf) format('truetype'),
+         url(./font/Unbounded-Bold.woff) format('woff'),
+         url(./font/Unbounded-Bold.woff2) format('woff2');
+
+         font-weight: bold;
+  }
+
+  @font-face {
+    font-family: 'Unbounded-Light';
+    src: url(./font/Unbounded-Light.eot);
+    src: url(./font/Unbounded-Light.eot) format('embedded-opentype'),
+         url(./font/Unbounded-Light.otf) format('otf'),
+         url(./font/Unbounded-Light.ttf) format('truetype'),
+         url(./font/Unbounded-Light.woff) format('woff'),
+         url(./font/Unbounded-Light.woff2) format('woff2');
+
+    font-weight: light;
+  }
+
+body {
+    font-size: 16px;
+    font-family: 'Unbounded-Light', sans-serif;
+    line-height: 1.6;
+    color: #322E2E;
+
+    /* -webkit-font-smoothing: antialiased; */
+    background-color: #FBF7F0;
+}
+
+.page_intro {
+    background: center / cover no-repeat url(./img/intro.png);
+    display: block;
+    width: auto;
+    height: 100vh;
+    max-height: 800px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-family: 'Unbounded-Light', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    color: #FBF7F0;
+}
+.nav_header {
+    display: flex;
+    justify-content: right;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.nav-item:first-child {
+    padding-left: none;
+}
+
+.intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #FBF7F0;
+    margin-top: 170px;
+}
+
+.h2 {
+    font-family: 'StandingFlowerScriptPersonal-L31Y3';
+    font-size: 48px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.h1 {
+    font-family: 'Unbounded-Black';
+    font-size: 72px;
+    width: 610px;
+    margin: 0 auto;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.btn_position {
+    width: 230px;
+    margin: 0 auto;
+}
+
+.btn {
+    font-family: 'Unbounded-Bold';
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 56px;
+    border: solid #322E2E 1px;
+    background-color: #E5C38D;
+    padding: 22px 40px;
+    display: inline-block;
+
+    transition: all 0.4s ease 0s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #322E2E;
+    color: #FBF7F0;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
