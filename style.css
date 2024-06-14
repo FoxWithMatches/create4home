@@ -73,6 +73,8 @@ body {
     font-family: 'Unbounded-Light', sans-serif;
 }
 
+/* Header */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -86,13 +88,41 @@ body {
 }
 
 .nav-item {
+    position: relative;
     text-transform: uppercase;
-    padding-left: 10px;
+    padding-left: 20px;
+}
+
+.nav-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #FBF7F0;
+    transition: width 0.5s;
+    opacity: 0.7;
+}
+
+.nav-item:hover::after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #FBF7F0;
+    transition: width 0.5s;
 }
 
 .nav-item:first-child {
     padding-left: none;
 }
+
+/* Intro */
 
 .intro {
     text-align: center;
@@ -103,19 +133,19 @@ body {
     margin-top: 170px;
 }
 
-.h2 {
+.name-h2 {
     font-family: 'StandingFlowerScriptPersonal-L31Y3';
     font-size: 48px;
     text-transform: uppercase;
     margin: 0;
 }
 
-.h1 {
+.name {
     font-family: 'Unbounded-Black';
     font-size: 72px;
     width: 610px;
     margin: 0 auto;
-    line-height: 100%;
+    line-height: 120%;
     text-transform: uppercase;
 }
 
@@ -145,5 +175,52 @@ body {
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+/* Services */
+
+.headline {
+    margin: 60px 0;
+    position: relative;
+}
+
+.h2 {
+    font-size: 36px;
+    font-family: 'Unbounded-Black';
+}
+
+.h1 {
+    font-size: 64px;
+    font-family: 'Unbounded-Black';
+    opacity: 10%;
+
+    position: absolute;
+    top: 0;
+    left: 28px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+}
+
+.services_item {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Unbounded-Light';
+    font-size: 36px;
+    color: #E5C38D;
+    border-bottom: solid 1px #E5C38D;
+    padding: 60px 0 20px 0;
+
+    transition: all 0.4s ease 0s;
+}
+
+.services_item:hover {
+    cursor: pointer;
+    letter-spacing: 1px;
+
     transition: all 0.4s ease 0s;
 }
