@@ -276,6 +276,19 @@ body {
     border: 1px solid #322E2E;
 }
 
+.repair_pos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.repair_desc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 /* About */
 
 .desc {
