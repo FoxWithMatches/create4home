@@ -241,6 +241,7 @@ body {
     font-family: 'StandingFlowerScriptPersonal-L31Y3';
     text-transform: uppercase;
     margin: 40px 0;
+    text-align: center;
 }
 
 .design_container {
@@ -310,6 +311,53 @@ body {
     height: 160px;
     background-color: #E5C38D;
     padding: 15px;
+}
+
+.supervision {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.supervision_desc {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+.white {
+    color: #FBF7F0;
+}
+
+.supervision_pos {
+    color: #FBF7F0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border-bottom: 1px solid #E5C38D; */
+}
+
+.supervision_text {
+    width: 200px;
+    height: 170px;
+    border-right: 1px solid #E5C38D;
+    padding: 15px;
+    border-bottom: 1px solid #E5C38D;
+}
+
+.supervision_text:last-child{
+    border-right: none;
+}
+
+.black_rectangle {
+    width: 200px;
+    height: 170px;
+    border-right: 1px solid #E5C38D;
+    padding: 15px;
+    border-bottom: 1px solid #E5C38D;
 }
 
 /* About */
