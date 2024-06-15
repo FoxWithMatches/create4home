@@ -245,10 +245,6 @@ body {
     text-transform: uppercase;
 }
 
-.about_desc {
-    line-height: 25px;
-}
-
 .numbers {
     display: flex;
 }
@@ -386,6 +382,39 @@ body {
     color: #322E2E;
 }
 
+/* Footer */
 
+.footer {
+    display: flex;
+    justify-content: space-between;
 
+    color: #A9A9A8;
+    font-size: 12px;
+}
 
+.footer_icon #facebook, 
+.footer_icon #instagram, 
+.footer_icon #whatsapp, 
+.footer_icon #telegram {
+    width: 25px;
+    height: 25px;
+    text-decoration: none;
+}
+
+.footer_icon {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.footer_contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer_text {
+    color: #A9A9A8;
+    font-size: 12px;
+    text-decoration: none;
+}
