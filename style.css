@@ -272,3 +272,44 @@ body {
 .about_desc span {
     font-family: 'Unbounded-Bold';
 }
+
+/* Projects */
+
+.bckg_black {
+    background-color: #322E2E;
+    padding: 40px 0 70px;
+}
+
+.bckg_black .headline {
+    color: #FBF7F0;
+}
+
+.projects_pos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+    margin-bottom: 70px;
+    filter: brightness(.4);
+
+    transition: all 0.4s ease 0s;
+}
+
+.project:hover {
+    filter: brightness(1);
+
+    transition: all 0.4s ease 0s;
+}
+
+.project_name {
+    color: #FBF7F0;
+}
+
+
