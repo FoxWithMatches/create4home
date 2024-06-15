@@ -245,7 +245,8 @@ body {
 
 .design_container {
     display: flex;
-    justify-content:center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 20px;
 }
@@ -289,6 +290,28 @@ body {
     gap: 20px;
 }
 
+.decor_pos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.decor_desc {
+    position: relative;
+    width: 250px;
+    height: 160px;
+    border: 1px solid #322E2E;
+    padding: 15px;
+}
+
+.gold_rectangle {
+    width: 250px;
+    height: 160px;
+    background-color: #E5C38D;
+    padding: 15px;
+}
+
 /* About */
 
 .desc {
@@ -327,6 +350,8 @@ body {
 
 .caps {
     text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: .5px;
 }
 
 .span_bold {
