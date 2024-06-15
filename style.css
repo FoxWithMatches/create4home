@@ -93,7 +93,7 @@ body {
     padding-left: 20px;
 }
 
-.nav-item::after {
+.nav-item::after, .link_a::after {
     content: "";
     display: block;
     position: absolute;
@@ -106,7 +106,7 @@ body {
     opacity: 0.7;
 }
 
-.nav-item:hover::after {
+.nav-item:hover::after, .link_a:hover::after {
     content: "";
     width: 100%;
     display: block;
@@ -277,7 +277,7 @@ body {
 
 .bckg_black {
     background-color: #322E2E;
-    padding: 40px 0 70px;
+    padding: 40px 0 40px 0;
 }
 
 .bckg_black .headline {
@@ -311,5 +311,54 @@ body {
 .project_name {
     color: #FBF7F0;
 }
+
+/* Contacts */
+
+.contacts {
+    text-align: center;
+    color: #FBF7F0;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.phone_pos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contacts a, a:visited {
+    color: #FBF7F0;
+    text-decoration: none;
+    position: relative;
+}
+
+.link_social {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+#facebook, 
+#instagram, 
+#whatsapp, 
+#telegram{
+    width: 60px;
+    height: 60px;
+
+    transition: all 0.4s ease 0s;
+}
+
+#facebook:hover, 
+#instagram:hover, 
+#whatsapp:hover, 
+#telegram:hover {
+    scale: 1.2;
+
+    transition: all 0.4s ease 0s;
+}
+
 
 
