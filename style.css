@@ -150,8 +150,7 @@ body {
 }
 
 .btn_position {
-    width: 230px;
-    margin: 0 auto;
+   text-align: center;
 }
 
 .btn {
@@ -163,6 +162,7 @@ body {
     background-color: #E5C38D;
     padding: 22px 25px;
     display: inline-block;
+    width: 230px;
 
     transition: all 0.4s ease 0s;
 }
@@ -359,6 +359,33 @@ body {
 
     transition: all 0.4s ease 0s;
 }
+
+/* Form */
+
+.cons_pos {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.cons_desc {
+    margin-bottom: 60px;
+}
+
+.input_form {
+    margin: 0 0 60px 0;
+    border: none;
+    border-bottom: 1px solid #322E2E;
+    outline: none;
+    background: transparent;
+    resize: none;
+
+    font-family: 'Unbounded-Light';
+    font-size: 16px;
+    color: #322E2E;
+}
+
 
 
 
