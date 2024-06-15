@@ -161,7 +161,7 @@ body {
     border-radius: 56px;
     border: solid #322E2E 1px;
     background-color: #E5C38D;
-    padding: 22px 40px;
+    padding: 22px 25px;
     display: inline-block;
 
     transition: all 0.4s ease 0s;
@@ -223,4 +223,52 @@ body {
     letter-spacing: 1px;
 
     transition: all 0.4s ease 0s;
+}
+
+/* About */
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 30px;
+}
+.about_name {
+    font-size: 24px;
+    font-family: 'Unbounded-Black';
+    text-align: end;
+}
+
+.about_name span {
+    font-family: 'StandingFlowerScriptPersonal-L31Y3';
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.about_desc {
+    line-height: 25px;
+}
+
+.numbers {
+    display: flex;
+}
+
+.numbers_desc {
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+}
+
+.num {
+    font-size: 36px;
+    font-family: 'Unbounded-Black';
+    color: #E5C38D;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.about_desc span {
+    font-family: 'Unbounded-Bold';
 }
