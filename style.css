@@ -360,6 +360,13 @@ body {
     border-bottom: 1px solid #E5C38D;
 }
 
+.set_pos {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
 /* About */
 
 .desc {
