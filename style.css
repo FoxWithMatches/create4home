@@ -566,3 +566,24 @@ body {
     font-size: 12px;
     text-decoration: none;
 }
+
+/* 404 */
+
+.not_found_pos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    color:#FBF7F0;
+    min-height: calc(100vh - 250px);
+}
+
+.btn_white {
+    background-color: #FBF7F0;
+}
+
+
+
+
+
+
