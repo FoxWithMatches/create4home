@@ -582,8 +582,35 @@ body {
     background-color: #FBF7F0;
 }
 
+/* Project */
 
+.project_img_pos {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
+.project_desc_pos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    gap: 20px;
+}
 
+.project_h {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project_text {
+    width: 65%;
+}
+
+.h_name_project {
+    font-size: 20px;
+    font-family: 'Unbounded-Bold';
+}
 
 
