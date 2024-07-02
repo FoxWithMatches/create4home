@@ -661,6 +661,8 @@ body {
 
     .h1 {
         font-size: 40px;
+        left: 20px;
+        top: 10px;
     }
 
     .name {
@@ -768,7 +770,6 @@ body {
 
     .h1 {
         font-size: 30px;
-        left: 20px;
     }
 
     .about_name {
@@ -823,4 +824,16 @@ body {
         margin: 0 auto;
     }
 
+}
+
+@media (max-width: 480px) {
+    .h1 {
+        left: 0;
+        font-size: 28px;
+    }
+
+    .name {
+        font-size: 36px;
+        width: 240px;
+    }
 }
