@@ -369,6 +369,14 @@ body {
 
 /* About */
 
+.about_position {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
 .desc {
     display: flex;
     flex-direction: column;
@@ -411,6 +419,13 @@ body {
 
 .span_bold {
     font-family: 'Unbounded-Bold';
+}
+
+
+.about {
+    width: 370px;
+    height: 460px;
+    background-color: #E5C38D;
 }
 
 /* Projects */
@@ -588,6 +603,7 @@ body {
     display: block;
     width: 100%;
     height: auto;
+    filter: brightness(.5);
 }
 
 .project_desc_pos {
@@ -611,6 +627,19 @@ body {
 .h_name_project {
     font-size: 20px;
     font-family: 'Unbounded-Bold';
+}
+
+.pos_pr {
+    position: relative;
+}
+
+.name_pr_desc {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 36px;
+    font-family: 'Unbounded-Light';
+    color: #FBF7F0;
 }
 
 
