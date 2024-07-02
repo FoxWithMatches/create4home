@@ -616,6 +616,7 @@ body {
     width: 100%;
     height: auto;
     filter: brightness(.5);
+    margin-top: 10px;
 }
 
 .project_desc_pos {
@@ -735,4 +736,91 @@ body {
         text-align: center;
         gap: 30px;
     }
+
+    .project_h {
+        width: 100%;
+    }
+
+    .project_text {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 40px;
+        width: 280px;
+        text-align: center;
+    }
+
+    .name-h2 {
+        font-size: 32px;
+    }
+
+    .intro  {
+        margin-top: 150px;
+    }
+
+    .h2 {
+        font-size: 24px;
+    }
+
+    .h1 {
+        font-size: 30px;
+        left: 20px;
+    }
+
+    .about_name {
+        text-align: center;
+    }
+
+    .services_item {
+        font-size: 24px;
+        padding: 20px 0 20px 0;
+    }
+
+    .design_desc_stage {
+        width: 100%;
+    }
+
+    .design_img {
+        width: 100%;
+    }
+
+    .gold_rectangle  {
+        display: none;
+    }
+
+    .supervision_text, 
+    .supervision_text:last-child  {
+        border: none;
+        border-bottom: 1px solid #E5C38D;
+        width: 300px;
+        height: 120px;
+    }
+
+    .black_rectangle {
+        display: none;
+    }
+
+    .handwritten {
+        font-size: 36px;
+    }
+
+    .cons_pos {
+        width: 100%;
+    }
+
+    #facebook, #instagram, #whatsapp, #telegram  {
+        width: 40px;
+    }
+
+    .numbers {
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 150px;
+        margin: 0 auto;
+    }
+
 }
