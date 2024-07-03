@@ -342,6 +342,32 @@ body {
     transition: all 0.4s ease 0s;
 }
 
+/* Accordion */
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+    margin: 20px 0;
+}
+
+.services .services_item {
+    position: relative;
+}
+
+.services .services_item::after {
+    content: "+"; /* Задаем иконку "+" для элемента аккордеона */
+    position: absolute;
+    top: 50%; /* Выравнивание по центру */
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 36px;
+}
+
+.services .services_item.active::after {
+    content: "\2014"; /* Меняем иконку на "-" при нажатии на элемент */
+  }
+
 /* Services description */
 
 .design_desc {

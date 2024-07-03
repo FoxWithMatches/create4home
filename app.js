@@ -80,5 +80,41 @@ function checkScrolls(scrollPos, introH) {
   for (let elm of elements) {
     observer.observe(elm);
   }
+
+  //Accordion
+
+  // document.querySelectorAll('.services_item').forEach((el) => {
+  //   el.addEventListener('click', () => {
+
+  //     let content = el.nextElementSibling;
+ 
+  //     if (content.style.maxHeight) {
+  //       document.querySelectorAll('.content').forEach((el) => el.style.maxHeight = null)
+  //     } else {
+  //       document.querySelectorAll('.content').forEach((el) => el.style.maxHeight = null)
+  //       content.style.maxHeight = content.scrollHeight + 'px'
+  //       addClass
+  //     }
+    
+  //   })
+  // });
+
+  const boxes = Array.from(document.querySelectorAll(".services_item")); 
+
+boxes.forEach((box) => {
+  box.addEventListener("click", boxHandler);
+});
+
+function boxHandler(e) {
+  e.preventDefault(); 
+  let currentBox = e.target.closest(".services_item");
+  let currentContent = e.target.nextElementSibling;
+  currentBox.classList.toggle("active");
+  if (currentBox.classList.contains("active")) {
+    currentContent.style.maxHeight = currentContent.scrollHeight + "px"; 
+  } else {
+    currentContent.style.maxHeight = 0;
+  }
+}
   
 })
