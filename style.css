@@ -46,6 +46,44 @@
     font-weight: light;
   }
 
+  .element_animation {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 1.5s;
+  }
+
+  .element_animation.element_show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .element_animation.element_show:nth-of-type(2).element_show {
+    transition-delay: .25s;
+  }
+
+  .element_animation.element_show:nth-of-type(3).element_show {
+    transition-delay: .5s;
+  }
+  .element_animation.element_show:nth-of-type(4).element_show {
+    transition-delay: .75s;
+  }
+  .element_animation.element_show:nth-of-type(5).element_show {
+    transition-delay: 1s;
+  }
+  .element_animation.element_show:nth-of-type(6).element_show {
+    transition-delay: 1.25s;
+  }
+  .element_animation.element_show:nth-of-type(7).element_show {
+    transition-delay: 1.5s;
+  }
+
+  .element_animation.element_show:nth-of-type(8).element_show {
+    transition-delay: 1.75s;
+  }
+
+  .element_animation.element_show:nth-of-type(9).element_show {
+    transition-delay: 2s;
+  }
   .mt {
     margin-top: 40px;
   }
