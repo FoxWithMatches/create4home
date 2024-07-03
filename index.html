@@ -7,26 +7,37 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+
     <title>Создано для дома</title>
 </head>
 <body>
 
     <!--Header-->
-    <div class="page_intro">
+  
+    <header class="header" id="header">
         <div class="container">
-            <header class="header">
+            <div class="header_inner">
                 <img src="./img/logo.png" alt="logo" class="logo">
-                <div class="nav_header">
-                    <nav class="nav-item">Услуги</nav>
-                    <nav class="nav-item">О компании</nav>
-                    <nav class="nav-item">проекты</nav>
-                    <nav class="nav-item">Контакты</nav>
-                </div>
-            </header>
+                <nav class="nav_header" id="nav">
+                    <a href ="" class="nav-item" data-scroll="#services">Услуги</a>
+                    <a href ="" class="nav-item" data-scroll="#aboutUs">О компании</a>
+                    <a href ="" class="nav-item">проекты</a>
+                    <a href ="" class="nav-item" data-scroll="#contacts">Контакты</a>
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger_item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
 
 <main>
       <!--Intro-->
-            <div class="intro">
+      <div class="page_intro">
+      <div class="container">
+            <div class="intro" id="intro">
                 <h2 class="name-h2">студия дизайна</h2>
                 <h1 class="name">Создано для дома</h1>
                 <h2 class="name-h2 h2_down">и офиса</h2>
@@ -39,7 +50,7 @@
 
     <!--Services-->
     <div class="container">
-        <div class="headline">
+        <div class="headline" id="services">
             <h2 class="h2">Услуги</h2>
             <h1 class="h1">Услуги</h1>
         </div>
@@ -212,7 +223,7 @@
     
     <!--About-->
     <div class="container">
-        <div class="headline">
+        <div class="headline" id="aboutUs">
             <h2 class="h2">Дизайнер</h2>
             <h1 class="h1">Дизайнер</h1>
         </div>
@@ -315,9 +326,9 @@
             </div>
         </div>
 
-    <!--Contacts-->
+<!--Contacts-->
         <div class="container">
-            <div class="headline">
+            <div class="headline" id="contacts">
                 <h2 class="h2">Контакты</h2>
                 <h1 class="h1">Контакты</h1>
             </div>
@@ -487,5 +498,6 @@
             </footer>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
