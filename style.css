@@ -88,6 +88,10 @@
     margin-top: 40px;
   }
 
+  .pr {
+    padding-right: 40px;
+  }
+
   .center {
     margin: 0 auto;
   }
@@ -331,7 +335,6 @@ body {
     color: #E5C38D;
     border-bottom: solid 1px #E5C38D;
     padding: 60px 0 20px 0;
-
     transition: all 0.4s ease 0s;
 }
 
@@ -356,17 +359,17 @@ body {
 }
 
 .services .services_item::after {
-    content: "+"; /* Задаем иконку "+" для элемента аккордеона */
+    content: "+";
     position: absolute;
-    top: 50%; /* Выравнивание по центру */
+    bottom: 0%;
     transform: translateY(-50%);
     right: 20px;
     font-size: 36px;
 }
 
 .services .services_item.active::after {
-    content: "\2014"; /* Меняем иконку на "-" при нажатии на элемент */
-  }
+    content: "\2014";
+}
 
 /* Services description */
 
