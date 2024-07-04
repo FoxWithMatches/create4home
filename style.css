@@ -421,6 +421,8 @@ body {
 
 .design_img {
     border: 1px solid #322E2E;
+    width: 400px;
+    height: 245px;
 }
 
 .repair_pos {
@@ -581,6 +583,13 @@ body {
     background-color: #E5C38D;
 }
 
+.img_materials {
+    width: 440px;
+    height: auto;
+    display: block;
+
+}
+
 /* Projects */
 
 .bckg_black {
@@ -609,6 +618,7 @@ body {
     width: 30%;
     gap: 10px;
     margin-bottom: 70px;
+    text-decoration: none;
 
     transition: all 0.4s ease 0s;
 }
@@ -971,6 +981,7 @@ body {
 
     .design_img {
         width: 100%;
+
     }
 
     .gold_rectangle  {
