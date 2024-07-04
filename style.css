@@ -125,6 +125,11 @@ body {
 
 /* Header */
 
+.logo {
+    width: 200px;
+    height: 90px;
+}
+
 .header {
     color: #FBF7F0;
     width: 100%;
