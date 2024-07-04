@@ -769,8 +769,7 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    filter: brightness(.5);
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .project_desc_pos {
@@ -796,14 +795,7 @@ body {
     font-family: 'Unbounded-Bold';
 }
 
-.pos_pr {
-    position: relative;
-}
-
 .name_pr_desc {
-    position: absolute;
-    top: 30px;
-    left: 30px;
     font-size: 36px;
     font-family: 'Unbounded-Light';
     color: #FBF7F0;
@@ -942,10 +934,19 @@ body {
         width: 100%;
     }
 
+    .project_desc_pos {
+        margin: 20px 0;
+    }
+    
+
     .project_text {
         width: 100%;
     }
 
+    .name_pr_desc {
+        font-size: 24px;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -957,10 +958,6 @@ body {
 
     .name-h2 {
         font-size: 32px;
-    }
-
-    .intro  {
-        margin-top: 150px;
     }
 
     .h2 {
@@ -1024,9 +1021,13 @@ body {
         margin: 0 auto;
     }
 
+    .name_pr_desc {
+        font-size: 20px;
+    }
+
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
     .h1 {
         left: 0;
         font-size: 28px;
@@ -1036,4 +1037,8 @@ body {
         font-size: 36px;
         width: 240px;
     }
+
+    .h_name_project {
+        font-size: 16px;
+        }
 }
